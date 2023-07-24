@@ -216,8 +216,8 @@ if (window.XMLHttpRequest) {
 } else {
     xmlrsshttp = new ActiveXObject("Microsoft.XMLHTTP");
 }
-// xmlrsshttp.open("GET", "http://127.0.0.1:88/jekyll/_site/feed.xml", false);
-xmlrsshttp.open("GET", "https://kites-laboratory.github.io/jekyll/_site/feed.xml", false);
+// xmlrsshttp.open("GET", "http://127.0.0.1:88/patcher-web/news/feed.xml", false);
+xmlrsshttp.open("GET", "https://kites-laboratory.github.io/patcher-web/news/feed.xml", false);
 xmlrsshttp.send();
 xmlRssDoc = xmlrsshttp.responseXML;
 console.log(xmlRssDoc);
