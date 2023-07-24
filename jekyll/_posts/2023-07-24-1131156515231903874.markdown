@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Welcome to Kites labotorary!"
+date:   2023-07-24 10:10:53 +0700
+categories: update
+---
+<img src="https://media.discordapp.net/attachments/1121974498757984337/1129806888876388364/image.png" />
+
+2023-07-15
+Implement Clock Unknow Basement.
+New map, mobs, drop
+Enchant NPC at @exchange
+
+Wiki: https://hazyforest.com/dungeons:clock_tower_unknown_basement#dokuwiki__top
+Refer wiki (mob drop item): https://muhro.eu/wiki/index.php/Clock_Tower_Unknown_Basement#Weapon_Enchantment

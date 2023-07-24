@@ -220,16 +220,19 @@ if (window.XMLHttpRequest) {
 xmlrsshttp.open("GET", "https://kites-laboratory.github.io/patcher-web/news/feed.xml", false);
 xmlrsshttp.send();
 xmlRssDoc = xmlrsshttp.responseXML;
-console.log(xmlRssDoc);
 var title = new Array();
 var url = new Array();
 var desc = new Array();
 var time = new Array();
 var newsc = Math.min(xmlRssDoc.getElementsByTagName("entry").length, 5);
 for (var i = 1; i <= newsc; i++) {
+    let url_path = xmlRssDoc.getElementsByTagName('id')[i].childNodes[0].nodeValue.split("/");
+    let discord_url = "https://discord.com/channels/847686882111258644/1121974498757984337/" + url_path.slice(-1);
+    
+    console.log(xmlRssDoc.getElementsByTagName('content')[0]);
     title[i] = xmlRssDoc.getElementsByTagName('title')[i].childNodes[0].nodeValue;
-    url[i] = xmlRssDoc.getElementsByTagName('id')[i].childNodes[0].nodeValue;
-    desc[i] = xmlRssDoc.getElementsByTagName('summary')[i].childNodes[0].nodeValue;
-    time[i] = xmlRssDoc.getElementsByTagName('published')[i].childNodes[0].nodeValue;
+    url[i] = discord_url;
+    desc[i] = xmlRssDoc.getElementsByTagName('content')[i-1].childNodes[0].nodeValue;
+    time[i] = xmlRssDoc.getElementsByTagName('published')[i-1].childNodes[0].nodeValue;
     time[i] = time[i].slice(0, 10);
 }
