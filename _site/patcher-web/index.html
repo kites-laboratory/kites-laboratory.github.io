@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Requires IE 10 / Edge 12 at least -->
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styling.css">
+</head>
+
+<body
+    style="background-image: url('images/background.jpg'); background-size:cover; background-repeat: no-repeat; overflow: hidden;">
+    <!-- Patcher status callbacks -->
+    <script type="text/javascript">
+
+    </script>
+
+    <div class="wrapper noselect">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="d-flex mt-2 justify-content-center">
+                <img src="images/logo.png" height=75 alt="logo">
+            </div>
+
+            <ul class="list-unstyled components">
+                <!-- <li>
+                    <a href="#" onclick="openURL('https://muhro.eu/forum/')"><i class="bi bi-chat-left"></i> Forum</a>
+                </li>
+                <li>
+                    <a href="#" onclick="openURL('https://muhro.eu/wiki/')"><i class="bi bi-book"></i> Wiki</a>
+                </li>
+                <li>
+                    <a href="#" onclick="openURL('https://muhro.eu/')"><i class="bi bi-display"></i> Website</a>
+                </li> -->
+                <li>
+                    <a href="#" onclick="openURL('https://discord.gg/kgHGMxMuQQ')"><i class="bi bi-discord"></i> Discord</a>
+                </li>
+                <li>
+                    <a href="#" onclick="external.invoke('setup')"><i class="bi bi-toggles"></i> Game Setup</a>
+                </li>
+                <li>
+                    <a href="#" onclick="flatmapsClick()" class="disabled" id="flatmapsOption">
+                        <i class="bi bi-x-square"></i> Flatmaps <span>(Disabled)</span>
+                    </a>
+                </li>
+                <li style="color: #b5b5b5;">
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="bi bi-gear-fill"></i> Patcher Control</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#" onclick="external.invoke('cancel_update')"><i class="bi bi-x-circle"></i> Cancel
+                                update</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="external.invoke('start_update')"><i class="bi bi-arrow-repeat"></i>
+                                Retry</a></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="resetCache()"><i class="bi bi-exclamation-triangle-fill"></i> Reset
+                                ALL! Patches</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="external.invoke('manual_patch')"><i class="bi bi-save"></i> Add Patch</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <!-- <div class="card clean noselect"
+            style="width: 160px;font-size: 0.8em; position: absolute; top: 445px; left: 12px; margin:0 auto;">
+            <table>
+                <tr>
+                    <td width="20"><i class="bi bi-server"></i></td>
+                    <td>Mapserver:</td>
+                    <script>document.write('<td style="color:' + mapcolor + '">' + Mapserver + '</td>')</script>
+                </tr>
+                <tr>
+                    <td width="20"><i class="bi bi-server"></i></td><td>Charserver:</td>
+                    <script>document.write('<td style="color:' + charcolor + '">' + Charserver + '</td>')</script>
+                </tr>
+                <tr>
+                    <td width="20"><i class="bi bi-server"></i></td><td>Loginserver:</td>
+                    <script>document.write('<td style="color:' + logincolor + '">' + Loginserver + '</td>')</script>
+                </tr>
+                <tr>
+                    <td colspan="2"><u>Online Stats</u></td><td></td>
+                </tr>
+                <tr>
+                    <td width="20"><i class="bi bi-people-fill"></i></td><td>Unique Players: &nbsp</td>
+                    <td>
+                        <script>document.write(players)</script>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20"><i class="bi bi-shop"></i></td><td>Shops: </td>
+                    <td>
+                        <script>document.write(vendors)</script>
+                    </td>
+                </tr>
+            </table>
+        </div> -->
+        <div class="container">
+            <div class="card-deck noselect"
+                style="width: 48rem; height:470px; margin:30px auto 0 auto;">
+                <div class="card" style="background: rgba(0, 0, 0, 0.4); border:0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol id="olcindic" class="carousel-indicators"></ol>
+                        <script>
+                            ol = document.getElementById('olcindic');
+                            for (var i = 0; i < newsc; i++) {
+                                ol.innerHTML += '<li data-target="#carouselExampleIndicators" data-slide-to="' + i + '" ' + (i == 0 ? 'class="active"' : '') + '></li>'
+                            }
+                        </script>
+                        <div class="carousel-inner">
+                        </div>
+                        <div id="cinner" class="carousel-inner"></div>
+                        <script>
+                            div = document.getElementById('cinner');
+                            for (var i = 1; i <= newsc; i++) {
+                                div.innerHTML +=
+                                    '<div class="carousel-item ' + (i == 1 ? 'active' : '') + '">\
+                                          <div class="card clean" style="height:450px;">\
+                                            <div class="card-header clean" style="font-size: 0.9em; font-weight: bold; margin-top: 15px;">\
+                                             '+ title[i] + '\
+                                              </div>\
+                                            <div class="card-body newsimg clean" style="font-size: 0.75em;margin-left: 5px;margin-right: 5px;">\
+                                             '+ desc[i] + '\
+                                            </div>\
+                                            <div class="card-footer clean" style="font-size: 0.75em;font-style: italic;margin-bottom: 50px;">\
+                                                ' + time[i] + '<a href="#" onclick="openURL(\'' + url[i] + '\')"> <u>Read more...</u></a>\
+                                            </div>\
+                                          </div>\
+                                    </div>'
+                            }
+                        </script>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="card" style="background: rgba(0, 0, 0, 0.4); border:0">
+                    <b class="clean" style="margin:0 auto;text-align: center; padding-top: 10px">Login</b>
+                    <div class="card-body">
+                        <form class="signin-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" id="login"
+                                    required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" id="password"
+                                    required="required" disabled>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="form-control btn" id="button-play" onclick="startGame()"
+                                    disabled>Login & Play</button>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" class="form-check-input " value="lsRememberMe" id="rememberMe">
+                                <label class="checkbox-wrap" for="rememberMe">Remember me</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-bottom">
+            <div class="progress rounded-0 shadow-sm noselect" id="download-progress"
+                style="background: rgba(0, 0, 0, 0.4);">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                    id="download-progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <small class="justify-content-center d-flex text-dark" id="download-progress-text">
+                        Starting...
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('login').addEventListener('keypress', function (event) {
+            if (event.keyCode == 13) {
+                startGame();
+            }
+        });
+        document.getElementById('password').addEventListener('keypress', function (event) {
+            if (event.keyCode == 13) {
+                startGame();
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+* {
+  border-radius: 0 !important;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.newsimg img {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.clean {
+  background: rgba(0, 0, 0, 0.0);
+  border: none;
+  color: gainsboro;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.navbar {
+  padding: 10px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+#sidebar .sidebar-header {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+
+
+#sidebar {
+  min-width: 185px;
+  min-height: 600px;
+  background: rgba(00, 00, 00, .4);
+  color: #fff;
+  transition: all 0.1s;
+}
+
+#sidebar ul.components {
+  padding: 10px 0;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  margin-left: 5px;
+  padding: 3.5px;
+  font-size: 0.9em;
+  display: block;
+}
+
+#pageSubmenu {
+  font-size: 0.8em;
+  padding: 1.5px;
+}
+
+
+#sidebar ul li a:hover {
+  color: #AAAAAA;
+}
+
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+ul ul a {
+  font-size: 0.75em !important;
+  padding-left: 30px !important;
+}
+
+/* ---------------------------------------------------
+    Form Style
+----------------------------------------------------- */
+.form-control {
+  background: transparent;
+  border: none;
+  height: 50px;
+  color: white !important;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-control {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.form-control:hover,
+.form-control:focus {
+  background: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.form-control:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+textarea.form-control {
+  height: inherit !important;
+}
+
+
+.form-check-input {
+  margin-left: 12px;
+}
+
+.checkbox-wrap {
+  margin-left: 40px;
+  color: #fff;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 40px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn.btn-primary {
+  background: #fbceb5 !important;
+  border: 1px solid #fbceb5 !important;
+  color: #000 !important;
+}
+
+.btn.btn-primary:hover {
+  border: 1px solid #fbceb5;
+  background: transparent;
+  color: #fbceb5;
+}
+
+.btn.btn-primary.btn-outline-primary {
+  border: 1px solid #fbceb5;
+  background: transparent;
+  color: #fbceb5;
+}
+
+.btn.btn-primary.btn-outline-primary:hover {
+  border: 1px solid transparent;
+  background: #fbceb5;
+  color: #fff;
+}
+
+.disabled {
+  color: #cbcbcb !important;
+}
+#flatmapsOption {
+  color: #fff;
+}
