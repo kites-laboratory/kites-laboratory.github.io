@@ -1,3 +1,4 @@
 1 20230812-001-update-clientinfo.thor
 2 20230812-001-update-clientinfo.thor
 3 20230812-002-update-wordmap.thor
+4 20230814-001-add-delete-item.thor

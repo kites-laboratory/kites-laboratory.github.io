@@ -1,0 +1,132 @@
+/* Disable text selection */
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+/* Custom CSS for Navbar */
+.navbar {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    display: block;
+}
+
+.patcher-memu {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.patcher-memu a {
+    color: #adadad;
+    padding-right: 32px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    margin-top: 10px;
+    display: flex;
+}
+
+.nav-item {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Custom CSS for Cards */
+/* .container-fluid {
+    padding: 20px;
+} */
+
+/* Custom CSS for Progress Bar */
+.progress {
+    /* width: 100%; */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.progress-bar {
+    background-color: #ffc107;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    color: #343a40;
+}
+
+.progress-bar-striped {
+    background-image: none;
+    animation: none;
+}
+
+/* Custom CSS for Toasts */
+.toast-container {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+
+/* Login */
+.login-form {
+    width: 340px;
+    margin: 5px auto;
+    font-size: 15px;
+}
+
+.login-form form {
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 30px;
+}
+
+.login-form h2 {
+    margin: 0 0 15px;
+}
+
+.form-control,
+.btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 150px;
+}
+
+.btn-login {
+    margin-top: 10px;
+}

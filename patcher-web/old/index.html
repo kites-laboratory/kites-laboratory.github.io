@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Made for a 780x580 window -->
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kites Lab Patcher</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar noselect">
+        <div class="navbar-brand">Kites Lab Patcher</div>
+        <div class="navbar-nav ml-auto">
+            <button type="button" class="btn btn-primary" id="button-setup" onclick="external.invoke('setup')">Setup</button>
+            <button type="button" class="btn btn-danger" id="button-exit" onclick="external.invoke('exit')">Exit</button>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress noselect">
+        <div class="progress-bar progress-bar-striped bg-warning" id="download-progress-bar" style="width: 0%;">
+            <small id="download-progress-text">Starting...</small>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="login-form">
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" id="login" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" id="password" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block btn-login">Log in</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="patcher-memu">
+            <a href="#" onclick="external.invoke('cancel_update')">Cancel update</a>
+            <a href="#" onclick="external.invoke('start_update')">Retry</a>
+            <a href="#" onclick="external.invoke('manual_patch')">Manual patch</a>
+            <a href="#" onclick="external.invoke('reset_cache')">Reset cache</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
