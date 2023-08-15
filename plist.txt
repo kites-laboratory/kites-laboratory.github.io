@@ -3,3 +3,4 @@
 3 20230812-002-update-wordmap.thor
 4 20230814-001-add-delete-item.thor
 5 20230815-001-delete-item-sprite.thor
+6 20230815-001-update-3Para_Wand_WL.thor
