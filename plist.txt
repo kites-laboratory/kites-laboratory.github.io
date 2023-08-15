@@ -4,3 +4,4 @@
 4 20230814-001-add-delete-item.thor
 5 20230815-001-delete-item-sprite.thor
 6 20230815-001-update-3Para_Wand_WL.thor
+7 20230815-002-ogh-quest-fix-sprite.thor
