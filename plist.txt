@@ -7,3 +7,4 @@
 7 20230815-002-ogh-quest-fix-sprite.thor
 8 20230815-003-gepard-3client.thor
 9 20230816-001-gepard-3client.thor
+10 20230816-002-attendance.thor
