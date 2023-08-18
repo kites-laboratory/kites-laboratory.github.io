@@ -9,3 +9,4 @@
 9 20230816-001-gepard-3client.thor
 10 20230816-002-attendance.thor
 11 20230817-001-gacha.thor
+12 20230818-001-webservice.thor
