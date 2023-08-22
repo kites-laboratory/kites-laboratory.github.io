@@ -11,3 +11,6 @@
 11 20230817-001-gacha.thor
 12 20230818-001-webservice.thor
 13 20230821-001-updateiteminfo.thor
+14 20230822-001-addgacharttogrf.thor
+15 20230822-002-deletetgachaindata.thor
+16 20230822-003-iteminfo.thor
