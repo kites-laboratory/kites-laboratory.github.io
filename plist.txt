@@ -14,3 +14,5 @@
 14 20230822-001-addgacharttogrf.thor
 15 20230822-002-deletetgachaindata.thor
 16 20230822-003-iteminfo.thor
+17 20230823-001-iteminfo.thor
+18 20230823-002-itemretrict.thor
