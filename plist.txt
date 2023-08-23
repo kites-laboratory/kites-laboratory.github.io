@@ -16,3 +16,5 @@
 16 20230822-003-iteminfo.thor
 17 20230823-001-iteminfo.thor
 18 20230823-002-itemretrict.thor
+19 20230823-003-motetogrf.thor
+20 20230823-004-deletedatafiles.thor
