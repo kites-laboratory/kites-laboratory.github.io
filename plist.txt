@@ -21,3 +21,6 @@
 21 20230823-005.thor
 22 20230825-001-newmap.thor
 23 20230829-001-stylist.thor
+24 20230831-001-stylist.thor
+25 20230831-002-iteminfo.thor
+26 20230831-003-itemretrict.thor
