@@ -24,3 +24,6 @@
 24 20230831-001-stylist.thor
 25 20230831-002-iteminfo.thor
 26 20230831-003-itemretrict.thor
+27 20230906-001-updatestylist.thor
+28 20230906-002-iteminfo-newquest.thor
+29 20230906-003-newcostume.thor
