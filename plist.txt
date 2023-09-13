@@ -28,3 +28,5 @@
 28 20230906-002-iteminfo-newquest.thor
 29 20230906-003-newcostume.thor
 30 20230908-001-fixgarment.thor
+31 20230913-001-neweq.thor
+32 20230913-002-neweq-iteminfo.thor
