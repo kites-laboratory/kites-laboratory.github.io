@@ -32,3 +32,4 @@
 32 20230913-002-neweq-iteminfo.thor
 33 20230916-001-item-newquest.thor
 34 20230916-001-new-costume.thor
+35 20230916-003-fix-illusion-cube.thor
