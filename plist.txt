@@ -30,3 +30,5 @@
 30 20230908-001-fixgarment.thor
 31 20230913-001-neweq.thor
 32 20230913-002-neweq-iteminfo.thor
+33 20230916-001-item-newquest.thor
+34 20230916-001-new-costume.thor
