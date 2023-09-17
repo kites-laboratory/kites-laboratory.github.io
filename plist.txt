@@ -33,3 +33,5 @@
 33 20230916-001-item-newquest.thor
 34 20230916-001-new-costume.thor
 35 20230916-003-fix-illusion-cube.thor
+36 20230917-001-fix-costume-effect.thor
+37 20230917-002-fixviewid.thor
