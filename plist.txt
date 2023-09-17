@@ -35,3 +35,4 @@
 35 20230916-003-fix-illusion-cube.thor
 36 20230917-001-fix-costume-effect.thor
 37 20230917-002-fixviewid.thor
+38 20230918-001-attendance.thor
