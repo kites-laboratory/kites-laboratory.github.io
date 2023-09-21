@@ -36,3 +36,5 @@
 36 20230917-001-fix-costume-effect.thor
 37 20230917-002-fixviewid.thor
 38 20230918-001-attendance.thor
+39 20230921-001-iteminfo-deleteitem.thor
+40 20230921-002-viewpointtable.thor
