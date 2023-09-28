@@ -39,3 +39,6 @@
 39 20230921-001-iteminfo-deleteitem.thor
 40 20230921-002-viewpointtable.thor
 41 20230922-001-addsingaporeproxy.thor
+42 20230928-001-trungthumap.thor
+44 20230928-002-trungthuitem.thor
+45 20230928-003-remove-some-flatmap.thor
