@@ -42,3 +42,4 @@
 42 20230928-001-trungthumap.thor
 44 20230928-002-trungthuitem.thor
 45 20230928-003-remove-some-flatmap.thor
+46 20230928-004-updateiteminfotrungthu.thor
