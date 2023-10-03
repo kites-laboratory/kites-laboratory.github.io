@@ -45,3 +45,5 @@
 46 20230928-004-updateiteminfotrungthu.thor
 47 20230929-001-fix-snakehat.thor
 48 20230930-001-moveserver.thor
+49 20231004-001-iteminfo.thor
+50 20231004-002-itemreform.thor
