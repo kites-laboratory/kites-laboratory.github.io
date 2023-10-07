@@ -47,3 +47,5 @@
 48 20230930-001-moveserver.thor
 49 20231004-001-iteminfo.thor
 50 20231004-002-itemreform.thor
+51 20231008-001-newcos.thor
+52 20231008-002-iteminfo.thor
