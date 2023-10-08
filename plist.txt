@@ -50,3 +50,5 @@
 51 20231008-001-newcos.thor
 52 20231008-002-iteminfo.thor
 53 20231008-003-iteminfo.thor
+54 20231008-004-cashshop-url.thor
+55 20231008-005-iteminfo.thor
