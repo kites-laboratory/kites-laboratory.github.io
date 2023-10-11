@@ -55,3 +55,4 @@
 56 20231009-001-autofeed.thor
 57 20231009-002-iteminfo.thor
 58 20231009-003-cashshopurl.thor
+59 20231011-001-iteminfo.thor
