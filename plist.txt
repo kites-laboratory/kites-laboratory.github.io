@@ -56,3 +56,5 @@
 57 20231009-002-iteminfo.thor
 58 20231009-003-cashshopurl.thor
 59 20231011-001-iteminfo.thor
+60 20231018-001-iteminfo.thor
+61 20231018-002-missingmobdata.thor
