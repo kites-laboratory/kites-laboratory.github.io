@@ -58,3 +58,5 @@
 59 20231011-001-iteminfo.thor
 60 20231018-001-iteminfo.thor
 61 20231018-002-missingmobdata.thor
+62 20231025-001-iteminfo.thor
+63 20231025-002-missing-cos.thor
