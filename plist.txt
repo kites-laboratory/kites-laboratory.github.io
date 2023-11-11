@@ -65,3 +65,4 @@
 66 20231101-003.thor
 67 20231101-004.thor
 68 20231111-001-instance-quest.thor
+69 20231111-001-instance-quest.thor
