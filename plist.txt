@@ -67,3 +67,4 @@
 68 20231111-001-instance-quest.thor
 69 20231111-001-instance-quest.thor
 70 20231111-002-iteminfo.thor
+71 20231118-001-iteminfo.thor
