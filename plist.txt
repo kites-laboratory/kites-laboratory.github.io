@@ -70,3 +70,5 @@
 71 20231118-001-iteminfo.thor
 72 20231124-001-new-enchant.thor
 73 20231124-002-new-enchant.thor
+74 20231202-001_new-cos.thor
+75 20231202-002_new-item.thor
