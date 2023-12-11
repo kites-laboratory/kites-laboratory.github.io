@@ -77,3 +77,4 @@
 78 20231211-001_deleteitem.thor
 79 20231211-002_iteminfo.thor
 80 20231211-003_iteminfo.thor
+81 20231212-001_iteminfo.thor
