@@ -78,3 +78,5 @@
 79 20231211-002_iteminfo.thor
 80 20231211-003_iteminfo.thor
 81 20231212-001_iteminfo.thor
+82 20231216-001_iteminfo.thor
+83 20231216-002_laphine.thor
