@@ -83,3 +83,4 @@
 84 20231218-001_attendance.thor
 85 20231223-001_new_costume.thor
 86 20231223-002_iteminfo.thor
+87 20231223-003_iteminfo.thor
