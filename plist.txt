@@ -84,3 +84,6 @@
 85 20231223-001_new_costume.thor
 86 20231223-002_iteminfo.thor
 87 20231223-003_iteminfo.thor
+88 20231225-001_iteminfo.thor
+89 20231225-002_itemmove.thor
+90 20231226-001_garmentitem.thor
