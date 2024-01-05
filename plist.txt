@@ -90,3 +90,4 @@
 91 20231227-001_fix-garment.thor
 92 20231230-001_costume.thor
 93 20231230-002_new-egg.thor
+94 20240106-001_varmund_enchant.thor
